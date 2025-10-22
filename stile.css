@@ -1,0 +1,361 @@
+/* ---------- RESET & FONT ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffdf9;
+  color: #222;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background-color: rgba(183, 28, 28, 0.95);
+  transition: background 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+}
+
+.navbar.scrolled {
+  background-color: rgba(183, 28, 28, 1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-style: italic !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  transform: scale(1.05);
+}
+
+/* ---------- HOME SECTION ---------- */
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #fff5f5 0%, #fff 100%);
+}
+
+.home-section span {
+  color: #b71c1c;
+}
+
+/* Testo a sinistra */
+.home-section .col-lg-6 {
+  z-index: 1;
+  position: relative;
+}
+
+/* Titolo principale */
+.home-section h1 {
+  font-size: 5rem;
+  color: #f6ebeb;
+  line-height: 1.1;
+}
+
+.home-section h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.home-section p {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+.home-section a {
+  color: #b71c1c;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+
+.home-section a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #b71c1c;
+  transition: width 0.3s ease;
+}
+
+.home-section a:hover::after {
+  width: 100%;
+}
+
+/* Immagine a destra desktop, centrata verticalmente */
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .home-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .home-section .col-lg-6 {
+    margin-bottom: 30px;
+  }
+
+  .home-section h1 {
+    font-size: 3rem;
+  }
+
+  .home-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .home-section p {
+    font-size: 1.2rem;
+  }
+  #homepage{
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+    max-width: 300px;
+  }
+  #contatti h1{
+    white-space: nowrap;
+    font-size: 2rem !important;
+    
+    
+  }
+  footer .map-container{
+    width: 80% !important;
+  }
+
+}
+
+/* ---------- MENÙ, PANINI, FRITTI ---------- */
+#menu {
+  padding: 100px 0;
+  background: #fffdf9;
+}
+
+#menu h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#menu span {
+  color: #b71c1c;
+}
+
+.menu-category {
+  margin-bottom: 3rem;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.menu-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.menu-category h3 {
+  font-size: 1.8rem;
+  color: #b71c1c;
+  margin-bottom: 1.5rem;
+}
+
+.menu-list li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  float: right;
+  color: #b71c1c;
+  font-weight: 600;
+}
+
+/* ---------- ORDINA ---------- */
+#ordina {
+  background: linear-gradient(45deg, #b71c1c, #d32f2f);
+  color: #fff;
+  padding: 100px 0;
+}
+
+#ordina h1 span {
+  color: #ffc107;
+}
+
+#ordina img {
+  transition: transform 0.4s ease;
+}
+
+#ordina img:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- CONTATTI ---------- */
+#contatti {
+  background-color: #fff5f5;
+  padding: 80px 0;
+}
+
+#contatti span {
+  color: #b71c1c;
+}
+
+#contatti img {
+  width: 60px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+#contatti img:hover {
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #b71c1c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Imposta il body come flex container verticale */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altezza minima: tutta la finestra */
+}
+
+/* Wrapper principale dei contenuti */
+main {
+  flex: 1; /* prende tutto lo spazio disponibile, spingendo il footer in basso */
+}
+
+/* Footer rimane in basso */
+footer {
+  background-color: #b71c1c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+footer .map-container {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 600px; /* limiti la larghezza su desktop */
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+#home {
+  background-image: url('crea\ uno\ sfondo\ per\ il\ sito\ web\ della\ mia\ pizzeria\ 1920x780.jpg'); /* Inserisci il percorso della tua immagine */
+  background-size: cover;      /* Fa in modo che l'immagine copra tutta la sezione */
+  background-position: center; /* Centra l'immagine */
+  background-repeat: no-repeat;/* Non ripete l'immagine */
+  min-height: 100vh;           /* Altezza minima: tutta la schermata */
+  display: flex;
+  align-items: center;         /* Centra verticalmente il contenuto */
+  position: relative;
+  color: #fff;                 /* Colore del testo per contrastare lo sfondo */
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Nero trasparente al 50% */
+  z-index: 0;
+}
+
+#home .container {
+  position: relative;
+  z-index: 1; /* Il contenuto sta sopra l’overlay */
+}
+/* Sfondo del menu a tendina */
+.navbar-collapse {
+  background-color: #b71c1c; /* Colore rosso scuro */
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Link nel menu */
+.navbar-collapse .nav-link {
+  color: #fff; /* Bianco */
+  font-size: 1.1rem; /* Più grande su mobile */
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+/* Hover sui link */
+.navbar-collapse .nav-link:hover {
+  color: #ffc107; /* Giallo chiaro */
+  text-decoration: none;
+  transform: none;
+}
+.navbar-toggler {
+  border: none !important;         /* Rimuove il bordo */
+  background: transparent !important;  /* Sfondo trasparente */
+  outline: none !important;        /* Rimuove il focus outline */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;     /* Rimuove ombra al click */
+}
