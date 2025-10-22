@@ -277,20 +277,20 @@ footer .map-container {
 
 /* ---------- HOME BACKGROUND ---------- */
 #home {
-  background: url('img/sfondo-pizzeria.jpg') no-repeat center center;
+  background-image: url("img/pizzeria.jpg"); /* <-- controlla il nome esatto del file */
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: scroll;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
   color: #fff;
   padding: 2rem;
 }
-@supports (-webkit-touch-callout: none) {
-  #home {
-    height: -webkit-fill-available !important;
-  }
+
 }
 
 
@@ -383,6 +383,7 @@ footer .map-container {
 #contatti a:hover {
   color: #ffc107; /* o il colore che vuoi al passaggio */
 }
+
 
 
 
