@@ -277,7 +277,7 @@ footer .map-container {
 
 /* ---------- HOME BACKGROUND ---------- */
 #home {
-  background-image: url('crea\ uno\ sfondo\ per\ il\ sito\ web\ della\ mia\ pizzeria\ 1920x780.jpg'); /* Cambia con il percorso reale */
+  background-image: url('sfondo-pizzeria.jpg'); /* Cambia con il percorso reale */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -357,4 +357,5 @@ footer .map-container {
     height: 200px;
   }
 }
+
 
