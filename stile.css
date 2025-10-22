@@ -277,7 +277,7 @@ footer .map-container {
 
 /* ---------- HOME BACKGROUND ---------- */
 #home {
-  background-image: url("img/pizzeria.jpg"); /* 
+  background-image: url("img/pizzeria.jpg");  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -383,6 +383,7 @@ footer .map-container {
 #contatti a:hover {
   color: #ffc107; /* o il colore che vuoi al passaggio */
 }
+
 
 
 
