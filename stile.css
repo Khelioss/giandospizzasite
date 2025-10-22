@@ -277,7 +277,7 @@ footer .map-container {
 
 /* ---------- HOME BACKGROUND ---------- */
 #home {
-  background-image: url('sfondo-pizzeria.jpg'); /* Cambia con il percorso reale */
+  background-image: url('pizzeria.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -357,5 +357,6 @@ footer .map-container {
     height: 200px;
   }
 }
+
 
 
